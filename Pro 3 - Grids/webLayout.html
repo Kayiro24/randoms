@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Layout</title>
+
+    <style>
+        body{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-auto-columns: minmax(100px,auto);
+            grid-auto-rows: minmax(50px,auto);
+            grid-gap: 20px;
+        }
+        #head{
+            padding: 10px;
+            background-color: rgb(240, 206, 14);
+            grid-column-start: 1;
+            grid-column-end: 6;
+            grid-row-start: 1;
+            grid-row-end: 3;
+        }
+        #navi{
+            padding: 10px;
+            background-color: rgb(240, 206, 14);
+            grid-row-start: 3;
+            grid-row-end: 12;
+            grid-column-start: 1;
+            grid-column-end: 2;
+        }
+        #para{
+            padding: 10px;
+            background-color: rgb(240, 206, 14);
+            grid-row-start: 3;
+            grid-row-end: 10;
+            grid-column-start: 2;
+            grid-column-end: 4;
+        }
+        #ads{
+            padding: 10px;
+            background-color: rgb(240, 206, 14);
+            grid-row-start: 3;
+            grid-row-end: 10;
+            grid-column-start: 4;
+            grid-column-end: 6;
+        }
+        #foot{
+            padding: 10px;
+            background-color: rgb(240, 206, 14);
+            grid-row-start: 10;
+            grid-row-end: 12;
+            grid-column-start: 2;
+            grid-column-end: 6;
+        }
+    </style>
+
+</head>
+
+<body>
+    <header id="head">Header</header>
+    <article id="para">Article</article>
+    <nav id="navi">Nav</nav>
+    <div id="ads">Ads</div>
+    <footer id="foot">Footer</footer>
+</body>
+</html>
